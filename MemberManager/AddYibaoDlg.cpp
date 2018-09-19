@@ -416,7 +416,7 @@ void CAddYibaoDlg::OnBnClickedOk()
 				++iYibaoid;
 			}
 			*/
-			m_pDlg->InitList();
+			// m_pDlg->InitList();
 			EmptyAllControl();
 		}
 	}
