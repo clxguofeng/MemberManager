@@ -131,6 +131,12 @@ void CSelectYibaoMemberDlg::Init()
 		m_List.SetFocus();
 		m_List.SetItemState(0, LVIS_SELECTED | LVIS_FOCUSED, LVIS_SELECTED | LVIS_FOCUSED);
 	}
+	
+	if (iRow == 0)
+	{
+		CMFCDialog::OnCancel();
+		AfxMessageBox("√ª”–’“µΩ£°");
+	}
 }
 
 void CSelectYibaoMemberDlg::OnBnClickedButtonSelect()
