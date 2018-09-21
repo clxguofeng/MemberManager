@@ -289,6 +289,7 @@ BOOL CMemberInfoDlg::ImportFile(CString strFileName)
 					strCode.Format("%s%d", szChars, i);
 					RangePtr rangeCode = worksheet->GetRange(_variant_t(strCode), _variant_t(strCode));
 					strCode = (LPCTSTR)(_bstr_t)(rangeCode->GetValue2());
+					strCode.MakeUpper();
 				}
 
 
