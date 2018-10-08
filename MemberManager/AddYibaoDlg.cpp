@@ -221,6 +221,11 @@ BOOL CAddYibaoDlg::PreTranslateMessage(MSG* pMsg)
 					AddMember();
 					SumCost();
 				}
+				else if ((pMsg->hwnd == m_editCode.m_hWnd) || (pMsg->hwnd == m_editPhone.m_hWnd)
+					|| (pMsg->hwnd == m_editDibao.m_hWnd))
+				{
+					OnBnClickedButtonAdd();
+				}
 			}
 			return TRUE;
 		case VK_ESCAPE: //ESC  
